@@ -8,7 +8,7 @@ chrome.runtime.onMessage.addListener((request, sender) => {
         const text = child[i].textContent;
         let result = '';
 
-        for (var j = 0; j < text.length; j++) {
+        for (let j = 0; j < text.length; j++) {
             let char = text.charCodeAt(j);
             if (text.charCodeAt(j) !== 32) {
                 char += 2;
