@@ -11,7 +11,7 @@ chrome.runtime.onMessage.addListener((request, sender) => {
         for (var j = 0; j < text.length; j++) {
             let char = text.charCodeAt(j);
             if (text.charCodeAt(j) !== 32) {
-                char = text.charCodeAt(j) + 2;
+                char += 2;
             }
             result += String.fromCharCode(char);
         }
